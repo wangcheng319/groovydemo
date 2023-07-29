@@ -1,0 +1,28 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.github.qq549631030:android-junk-code:1.2.5"
+//        classpath 'com.getkeepsafe.dexcount:dexcount-gradle-plugin:4.0.0'
+    }
+}
+
+
+rootProject.name = "GroovyDemo"
+include ':app'
